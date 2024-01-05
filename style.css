@@ -135,3 +135,21 @@ div.beloved:after {
         transform: translateX(3vmin) translateY(-3vmin);
     }
 }
+@media (max-width: 480px) {
+    div.beloved {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    div.beloved:before,
+    div.beloved:after {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    div.beloved:after {
+        top: 10vmin;
+        left: 9vmin;
+        font-size: 4vmin;
+    }
+}
