@@ -24,13 +24,16 @@ div:after {
 }
 
 div.beloved {
-    width: 100vmin;
-    height: 100vmin;
-    left: -5vmin;
+    width: 80vmin;
+    /* Adjust the size according to your needs */
+    height: 80vmin;
+    /* Adjust the size according to your needs */
+    left: 0;
     margin: 0 auto;
     display: flex;
     z-index: -99;
     position: relative;
+    /*  */
     background: radial-gradient(ellipse, #e3ba9b 3vmin, transparent 5vmin) 50vmin 5vmin/10vmin 5vmin no-repeat,
         radial-gradient(circle, #3c6526 0.75vmin, black 0.75vmin, transparent 1vmin) 52vmin 12vmin/4vmin 4vmin no-repeat,
         radial-gradient(circle, #3c6526 0.75vmin, black 0.75vmin, transparent 1vmin) 56vmin 12vmin/4vmin 4vmin no-repeat,
@@ -50,8 +53,10 @@ div.beloved {
 }
 
 div.beloved:before {
-    width: 100vmin;
-    height: 100vmin;
+    width: 80vmin;
+    /* Adjust the size according to your needs */
+    height: 80vmin;
+    /* Adjust the size according to your needs */
     z-index: 50;
     display: flex;
     position: absolute;
@@ -67,10 +72,14 @@ div.beloved:before {
 }
 
 div.beloved:after {
-    width: 100vmin;
-    height: 100vmin;
-    top: 30vmin;
-    left: 28vmin;
+    width: 80vmin;
+    /* Adjust the size according to your needs */
+    height: 80vmin;
+    /* Adjust the size according to your needs */
+    top: 15vmin;
+    /* Adjust the position according to your needs */
+    left: 14vmin;
+    /* Adjust the position according to your needs */
     z-index: 50;
     display: flex;
     position: absolute;
@@ -82,7 +91,29 @@ div.beloved:after {
     color: #ffffff;
     opacity: 0.38;
     font-family: "Architects Daughter", cursive;
-    font-size: 12vmin;
+    font-size: 6vmin;
+    /* Adjust the font size according to your needs */
+}
+
+@media (max-width: 768px) {
+
+    /* Add styles for screens with a maximum width of 768px */
+    div.beloved {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    div.beloved:before,
+    div.beloved:after {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    div.beloved:after {
+        top: 10vmin;
+        left: 9vmin;
+        font-size: 4vmin;
+    }
 }
 
 div.beloved:before {
