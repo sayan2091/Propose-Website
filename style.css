@@ -95,7 +95,7 @@ div.beloved:after {
     /* Adjust the font size according to your needs */
 }
 
-@media (max-width: 720px) {
+@media (max-width: 790px) {
 
     /* Add styles for screens with a maximum width of 768px */
     div.beloved {
